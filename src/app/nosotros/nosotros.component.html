@@ -1,6 +1,14 @@
 <div class="mt-5">
     <h2>Nosotros</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quidem veniam et? 
-        Molestias tenetur sed magnam, inventore cum soluta architecto, quae ipsam animi 
-        odio sit mollitia totam blanditiis dolore voluptates!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, obcaecati. 
+        Accusantium autem doloribus quos voluptatem labore enim, quibusdam doloremque 
+        consequatur dicta dolor inventore, tempora reprehenderit molestias sapiente</p>
+    <ul class="list-group mt-3">
+        <li class="list-group-item" *ngFor="let item of equipo; index as i">
+            <h6>Nombre: {{item.nombre}}</h6>
+            <h6>Especialidad: {{item.especialidad}}</h6>
+            <a [routerLink]="['/equipo', i]">Leer más...</a>
+        </li>
+      </ul>
+
 </div>
